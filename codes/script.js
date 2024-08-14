@@ -39,7 +39,6 @@ function oper(operS)
             document.getElementById('AC').innerHTML = "AC";
         }
     if (operS === '+') {operType = 1} else if (operS === '-') {operType = 2} else if (operS === '*') {operType = 3} else {operType = 4}
-
 }
 
 function clean()
@@ -93,4 +92,5 @@ function calculate()
         console.log("❦Love of my life❦");
     }
     num1 = 0;
+    operType = 0;
 }
