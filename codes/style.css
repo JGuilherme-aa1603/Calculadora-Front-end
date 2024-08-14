@@ -1,0 +1,118 @@
+body {
+    display: flex;
+    margin: 0;
+    margin-top: 80px;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(67, 141, 141);
+}
+
+.calculator {
+    display: block;
+    width: 40vw;
+    height: 84vh;
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+}
+
+.display {
+    display: flex;
+    justify-content: right;
+    align-content: center;
+    width: 40vw;
+    height: 14vh;
+    background-color: rgb(34, 34, 34);
+    color: white;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.display h1 {
+    margin-right: 40px;
+    font-size: 40px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.display p {
+    font-size: 20px;
+}
+
+.keysContainer {
+    display: flex;
+    width: 40vw;
+    height: 70vh;
+}
+
+.keys {
+    display: flex;
+    flex-wrap: wrap;
+    width: 30vw;
+    height: 70vh;
+}
+
+.keys button {
+    width: 10vw;
+    height: 14vh;
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+    border-color: black;
+    border: 0.5px solid black;
+}
+
+.keys button:active {
+    background-color: rgb(203, 203, 203);
+    transform: scale(0.99);
+}
+
+.keys2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 10vw;
+    height: 70vh;
+}
+
+.keys2 button {
+    width: 10vw;
+    height: 14vh;
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+    border-color: black;
+    border: 0.5px solid;
+}
+
+.keys2 button:active {
+    background-color: rgb(203, 203, 203);
+    transform: scale(0.99);
+}
+
+#equal {
+    width: 10vw;
+    height: 42vh;
+    font-size: 30px;
+    border-bottom-right-radius: 30px;
+    border-color: black;
+    background-color: rgb(129, 57, 197);
+    color: white;
+}
+
+#equal:active {
+    background-color: rgb(98, 40, 153);
+    transform: scale(0.999);
+}
+
+.leftbottom {
+    border-bottom-left-radius: 30px;
+}
+
+.operator {
+    background-color: rgb(190, 189, 189);
+}
+
+.operator:active {
+    background-color: rgb(146, 144, 144); 
+    transform: scale(0.99);
+}
