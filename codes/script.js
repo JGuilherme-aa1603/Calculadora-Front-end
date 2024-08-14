@@ -1,11 +1,11 @@
 var num1 = 0;
-var tOPerac = 0;
+var operType = 0;
 
 function insert(num)
 {
-    var numero = document.getElementById('displayNumber').innerHTML;
+    var number = document.getElementById('displayNumber').innerHTML;
 
-    if (!isNaN(num) && numero === "0" || document.getElementById('AC').innerHTML === "CE")
+    if (!isNaN(num) && number === "0" || document.getElementById('AC').innerHTML === "CE")
     {
 
         document.getElementById('displayNumber').innerHTML = num;
@@ -17,31 +17,31 @@ function insert(num)
     }
     else
     {
-        document.getElementById('displayNumber').innerHTML = numero + num;
+        document.getElementById('displayNumber').innerHTML = number + num;
     }
 }
 
-function oper(soper)
+function oper(operS)
 {
-    var numero = parseFloat(document.getElementById('displayNumber').innerHTML)
+    var number = parseFloat(document.getElementById('displayNumber').innerHTML)
     if (!num1)
     {
-        num1 = numero;
+        num1 = number;
         document.getElementById('displayNumber').innerHTML = 0;
-        document.getElementById('previous').innerHTML = num1 + " " + soper;
+        document.getElementById('previous').innerHTML = num1 + " " + operS;
     }
     else
     {
-        if (tOPerac === 1) {num1 += numero} else if (tOPerac === 2) {num1 -= numero}else if (tOPerac === 3) {num1 *= numero} else {num1 /= numero}
+        if (operType === 1) {num1 += number} else if (operType === 2) {num1 -= number}else if (operType === 3) {num1 *= number} else {num1 /= number}
         document.getElementById('displayNumber').innerHTML = 0;
-        document.getElementById('previous').innerHTML = num1 + " " + soper;
+        document.getElementById('previous').innerHTML = num1 + " " + operS;
     }
 
     if (document.getElementById('AC').innerHTML === "CE")
         {
             document.getElementById('AC').innerHTML = "AC";
         }
-    if (soper === '+') {tOPerac = 1} else if (soper === '-') {tOPerac = 2} else if (soper === '*') {tOPerac = 3} else {tOPerac = 4}
+    if (operS === '+') {operType = 1} else if (operS === '-') {operType = 2} else if (operS === '*') {operType = 3} else {operType = 4}
 
 }
 
@@ -76,9 +76,9 @@ function back()
 
 function calculate()
 {
-    var numero = parseFloat(document.getElementById('displayNumber').innerHTML)
+    var number = parseFloat(document.getElementById('displayNumber').innerHTML)
 
-    if (tOPerac === 0) {num1 = numero}else if (tOPerac === 1) {num1 += numero} else if (tOPerac === 2) {num1 -= numero}else if (tOPerac === 3) {num1 *= numero} else {num1 /= numero}
+    if (operType === 0) {num1 = number}else if (operType === 1) {num1 += number} else if (operType === 2) {num1 -= number}else if (operType === 3) {num1 *= number} else {num1 /= number}
 
     document.getElementById('previous').innerHTML = "0";
     document.getElementById('AC').innerHTML = "CE";
@@ -89,7 +89,7 @@ function calculate()
          document.getElementById('previous').innerHTML = "💀"
         console.log("💀💀💀💀💀💀💀💀💀💀")
     }
-    if (isNaN(num1))
+    else if (isNaN(num1))
     {
         document.getElementById('displayNumber').innerHTML = "❦Iunah❦";
         document.getElementById('previous').innerHTML = "❦I Love You So Much My Darling❦"
