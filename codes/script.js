@@ -13,12 +13,9 @@ function insert(num)
             {
                 document.getElementById('AC').innerHTML = "AC";
             }
- 
+        return;
     }
-    else
-    {
-        document.getElementById('displayNumber').innerHTML = number + num;
-    }
+    document.getElementById('displayNumber').innerHTML = number + num;
 }
 
 function oper(operS)
