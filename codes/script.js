@@ -24,15 +24,14 @@ function oper(operS)
     if (!num1)
     {
         num1 = number;
-        document.getElementById('displayNumber').innerHTML = 0;
-        document.getElementById('previous').innerHTML = num1 + " " + operS;
     }
     else
     {
         if (operType === 1) {num1 += number} else if (operType === 2) {num1 -= number}else if (operType === 3) {num1 *= number} else {num1 /= number}
-        document.getElementById('displayNumber').innerHTML = 0;
-        document.getElementById('previous').innerHTML = num1 + " " + operS;
     }
+    document.getElementById('displayNumber').innerHTML = 0;
+    document.getElementById('previous').innerHTML = num1 + " " + operS;
+
 
     if (document.getElementById('AC').innerHTML === "CE")
         {
