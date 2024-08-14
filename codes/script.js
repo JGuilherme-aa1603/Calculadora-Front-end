@@ -83,7 +83,7 @@ function calculate()
     document.getElementById('previous').innerHTML = "0";
     document.getElementById('AC').innerHTML = "CE";
     document.getElementById('resultado').innerHTML = num1;
-    if (num1 === Infinity)
+    if (num1 === Infinity || num1 === -Infinity)
     {
         document.getElementById('resultado').innerHTML = "💀💀💀💀💀💀💀💀💀💀";
          document.getElementById('previous').innerHTML = "💀"
