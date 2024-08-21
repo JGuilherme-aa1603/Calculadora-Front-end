@@ -13,3 +13,4 @@ It may contain errors or bugs as **I am still learning**, but I was very proud o
 
 - [ ] Make funcional in cellphones.
 - [ ] Fix some bugs.
+- [ ] Improve code and syntax.
