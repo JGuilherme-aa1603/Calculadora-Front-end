@@ -1,6 +1,8 @@
 # A project to test my beginner skills
 
-It may contain errors or bugs as I am still learning, but I was very proud of the result.
+It may contain errors or bugs as **I am still learning**, but I was very proud of the result.
+
+*And sorry if this README have any writing error, I am Brazilian!*
 
 ## Small easter eggs
 
