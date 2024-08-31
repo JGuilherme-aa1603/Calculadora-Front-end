@@ -68,11 +68,11 @@ function clean()
 function back()
 {
     var displayNumber = document.getElementById('displayNumber').innerHTML;
-    if (document.getElementById('displayNumber').innerHTML != 0)
+    if (displayNumber != 0)
     {
         document.getElementById('displayNumber').innerHTML = displayNumber.substring(0, displayNumber.length -1);
     }
-    if (displayNumber.length === 1)
+    if (displayNumber.length === 1 || displayNumber == "0.")
     {
         document.getElementById('displayNumber').innerHTML = "0";
     }
