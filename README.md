@@ -11,6 +11,6 @@ It may contain errors or bugs as **I am still learning**, but I was very proud o
 
 ## To do
 
-- [ ] Make funcional in cellphones.
-- [ ] Fix some bugs.
+- [X] Make funcional in cellphones.
+- [X] Fix some bugs.
 - [ ] Improve code and syntax.
