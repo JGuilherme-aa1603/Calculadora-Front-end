@@ -59,6 +59,7 @@ function clean()
     document.getElementById('displayNumber').innerHTML = "0";
     document.getElementById('previous').innerHTML = "0";
     num1 = 0;
+    operType = 0;
     if (document.getElementById('AC').innerHTML === "CE")
     {
         document.getElementById('AC').innerHTML = "AC";
