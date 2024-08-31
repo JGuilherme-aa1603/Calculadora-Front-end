@@ -116,3 +116,42 @@ body {
     background-color: rgb(146, 144, 144); 
     transform: scale(0.99);
 }
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .calculator {
+        width: 90vw;
+        height: 84vh;
+    }
+
+    .display{
+        width: 90vw;
+    }
+
+    .keysContainer{
+        width: 90vw;
+    }
+
+    .keys{
+        width: 67.5vw;
+    }
+
+    .keys button{
+        width: 22.5vw;
+    }
+
+    .keys2 {
+        width: 22.5vw;
+    }
+
+    .keys2 button {
+        width: 22.5vw;
+    }
+
+    #equal {
+        width: 22.5vw;
+    }
+}
