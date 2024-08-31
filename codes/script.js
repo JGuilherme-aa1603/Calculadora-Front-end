@@ -7,8 +7,14 @@ function insert(num)
 
     if (!isNaN(num) && number === "0" || document.getElementById('AC').innerHTML === "CE")
     {
-
-        document.getElementById('displayNumber').innerHTML = num;
+        if (isNaN(num))
+        {
+            document.getElementById('displayNumber').innerHTML = 0 + num;
+        }
+        else
+        {
+            document.getElementById('displayNumber').innerHTML = num;
+        }
         if (document.getElementById('AC').innerHTML === "CE")
             {
                 document.getElementById('AC').innerHTML = "AC";
