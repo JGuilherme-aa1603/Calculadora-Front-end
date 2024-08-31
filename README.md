@@ -9,6 +9,11 @@ It may contain errors or bugs as **I am still learning**, but I was very proud o
 * When dividing any number (other than 0) by 0.
 * When dividing 0 by 0. (A message to my girlfriend S2).
 
+## Please Read!!
+
+I found some bugs and fixed them, but as i said I'm a beginner, if you found any bug please open a Issue :)
+I know the code is not as organized as I wanted, but I will fix it soon.
+
 ## To do
 
 - [X] Make funcional in cellphones.
