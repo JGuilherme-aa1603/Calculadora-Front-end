@@ -60,7 +60,7 @@ body {
     font-size: 30px;
     border-color: black;
     border: 0.5px solid black;
-    color: black;
+    color: rgb(53, 53, 53);
 }
 
 .keys button:active {
@@ -83,7 +83,7 @@ body {
     font-size: 30px;
     border-color: black;
     border: 0.5px solid black;
-    color: black;
+    color: rgb(53, 53, 53);
 }
 
 .keys2 button:active {
