@@ -21,13 +21,21 @@ function insert(num)
 function oper(operS)
 {
     var number = parseFloat(document.getElementById('displayNumber').innerHTML)
-    if (!num1)
+
+    if (isNaN(number)) 
+    {
+        number = 0;
+    }
+
+    if (!num1 && num1 !== 0)
     {
         num1 = number;
     }
     else
     {
-        if (operType === 1) {num1 += number} else if (operType === 2) {num1 -= number}else if (operType === 3) {num1 *= number} else {num1 /= number}
+        if (operType === 0) {num1 = number} else if (operType === 1) {num1 += number} else if (operType === 2) {num1 -= number}else if (operType === 3) {num1 *= number} else {num1 /= number}
+
+        num1 = Math.round((num1 + Number.EPSILON) * 100000) / 100000;
     }
     document.getElementById('displayNumber').innerHTML = 0;
     document.getElementById('previous').innerHTML = num1 + " " + operS;
@@ -74,6 +82,8 @@ function calculate()
     var number = parseFloat(document.getElementById('displayNumber').innerHTML)
 
     if (operType === 0) {num1 = number}else if (operType === 1) {num1 += number} else if (operType === 2) {num1 -= number}else if (operType === 3) {num1 *= number} else {num1 /= number}
+
+    num1 = Math.round((num1 + Number.EPSILON) * 100000) / 100000;
 
     document.getElementById('previous').innerHTML = "0";
     document.getElementById('AC').innerHTML = "CE";
